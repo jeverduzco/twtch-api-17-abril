@@ -21,7 +21,7 @@
       "collectionName": "familias",
       "connectionStringSetting": "DB",
       "direction": "in",
-      "sqlQuery": "SELECT f.id, f.lastName FROM Familias f WHERE f.id = {id}"
+      "sqlQuery": "SELECT * FROM Familias"
     }
   ]
 }
