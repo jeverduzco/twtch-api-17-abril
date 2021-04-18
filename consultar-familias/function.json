@@ -1,0 +1,27 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "cosmosDB",
+      "name": "consultarFamilias",
+      "databaseName": "poblacion",
+      "collectionName": "familias",
+      "connectionStringSetting": "DB",
+      "direction": "in",
+      "sqlQuery": "SELECT f.id, f.lastName FROM Familias f WHERE f.id = {id}"
+    }
+  ]
+}
