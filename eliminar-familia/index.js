@@ -1,6 +1,6 @@
 const cosmos = require("@azure/cosmos");
 const CosmosClient = cosmos.CosmosClient;
-
+// estas llaves eran para una prueba rápida y ya no existen, nunca pongan accesos en el código :)
 const endpoint = "https://twitch-17-abril-db.documents.azure.com";
 const masterKey = "q8x8Hbg7iE1SwoHUl4GGelqLngsF2qGttZMGTKtI75aMN0PhHccVdhFVAHv9stZwdZ3xZu3DxGiwGaoyMhs9VQ==";
 const client = new CosmosClient({ endpoint, key: masterKey });
